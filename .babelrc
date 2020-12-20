@@ -2,6 +2,7 @@
   "presets": ["next/babel"],
   "plugins": [
     "babel-plugin-transform-goober",
-    "babel-plugin-macros"
+    "babel-plugin-macros",
+    "./babel-plugin-goober-css"
   ]
 }
