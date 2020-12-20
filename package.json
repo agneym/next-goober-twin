@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@babel/plugin-syntax-jsx": "^7.12.1",
+    "@tailwindcss/forms": "^0.2.1",
     "goober": "^2.0.19-next.1",
     "goober-autoprefixer": "^1.2.1",
     "next": "10.0.3",
