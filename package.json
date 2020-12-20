@@ -18,6 +18,7 @@
     "twin.macro": "^2.0.7"
   },
   "devDependencies": {
+    "@agney/babel-plugin-goober-css-prop": "0.0.1",
     "@babel/helper-module-imports": "^7.12.5",
     "babel-plugin-macros": "^3.0.1",
     "babel-plugin-transform-goober": "^1.2.0",

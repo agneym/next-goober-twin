@@ -3,6 +3,6 @@
   "plugins": [
     "babel-plugin-transform-goober",
     "babel-plugin-macros",
-    "./babel-plugin-goober-css"
+    "@agney/babel-plugin-goober-css-prop"
   ]
 }
