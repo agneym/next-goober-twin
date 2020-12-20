@@ -1,27 +1,27 @@
-import Document, { Head, Main, NextScript } from 'next/document'
-import { extractCss } from 'goober'
+import Document, { Html, Head, Main, NextScript } from "next/document";
+import { extractCss } from "goober";
 
-export default class MyDocument extends Document {
+export default class CustomDocument extends Document {
   static getInitialProps({ renderPage }) {
-    const page = renderPage()
-    const css = extractCss()
-    return { ...page, css }
+    const page = renderPage();
+    const css = extractCss();
+    return { ...page, css };
   }
 
   render() {
     return (
-      <html>
+      <Html>
         <Head>
           <style
-            id={'_goober'}
-            dangerouslySetInnerHTML={{ __html: ' ' + this.props.css }}
+            id={"_goober"}
+            dangerouslySetInnerHTML={{ __html: " " + this.props.css }}
           />
         </Head>
         <body>
           <Main />
           <NextScript />
         </body>
-      </html>
-    )
+      </Html>
+    );
   }
 }
