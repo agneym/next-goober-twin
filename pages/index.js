@@ -1,10 +1,14 @@
 import Head from "next/head";
 import { styled } from "goober";
-import "twin.macro";
+import tw from "twin.macro";
 
 const Title = styled("h1")`
   color: red;
 `;
+
+const Container = styled.div([
+  tw`flex flex-col items-center justify-center h-screen`,
+]);
 
 function Home() {
   return (
@@ -14,9 +18,9 @@ function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main tw="bg-green-400">
+      <Container tw="bg-green-400">
         <Title>NextJS HERE!</Title>
-      </main>
+      </Container>
     </div>
   );
 }
